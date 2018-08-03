@@ -9,12 +9,28 @@
    Andrew Garner
    August 3, 2018
 */
+
+int buttonPin = 7;
+int ledPin = 8;
+
 void setup() {
   // put your setup code here, to run once:
+  pinMode(ledPin, OUTPUT);
+  pinMode(buttonPin, INPUT_PULLUP);
 
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  if (isPressed()) {
+    digitalWrite(ledPin, HIGH);
+  } else {
+    digitalWrite(ledPin, LOW);
+  }
 
 }
+
+boolean isPressed() {
+  return digitalRead(buttonPin) == LOW;
+}
+
