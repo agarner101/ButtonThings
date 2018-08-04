@@ -1,6 +1,8 @@
 # Android ButtonThings
 Pushbutton example using Android Things.
 
+[Jump to HomeActivity.java source](ButtonThings/app/src/main/java/io/andrewgarner/buttonthings/HomeActivity.java)
+
 <img src="android-button.gif" width="80%"/>
 
 ### Components
